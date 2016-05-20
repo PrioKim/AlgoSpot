@@ -73,7 +73,7 @@ void pick(int n, int picked[], int toPick)
 		return;
 	}
 
-	int smallest = is_empty(picked) ? 0 : picked_back(picked);
+	int smallest = is_empty(picked) ? 0 : picked_back(picked) + 1;
 
 	for (int next = smallest; next < n; next++) {
 		picked_push_back(picked, next);
