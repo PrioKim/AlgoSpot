@@ -13,11 +13,11 @@ int main(){
 	cin >> str;
 	size = str.size();
 
-	for (int i; i < size; i++){
+	for (int i = 0; i < size; i++){
 		substr[i] = str.substr(i, size - i);
 	}
 
-	sort(substr[0], substr[size]);
+	sort(substr, substr+size);
 
 	for (int i = 0; i < size; i++){
 		cout << substr[i] << endl;
